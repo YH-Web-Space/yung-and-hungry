@@ -3,437 +3,482 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width">
+
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <div class="top-header df">
-            <div class="top-header__logo">
-                <img src="img/header/logo.png" alt="logo Y&H">
-            </div>
-            <div class="header-top__burger">
-                <span></span>
-            </div>
-        </div>
-
-        <div class="header-content df">
-            <div class="header-content__left df">
-                <h1 class="header-content__title">Dелаем сайты .</h1>
-                <p class="header-content__slogan">Получи <span
-                        class="header-content__slogan_violet">бесплатный прототип </span> .</p>
-                <div class="main-btn">
-                    <a class="main-btn__link" href="#">Получить</a>
+    <header class="header">
+        <div class="container">
+            <div class="top-header df">
+                <div class="top-header__logo">
+                    <img src="img/header/logo.png" alt="logo Y&H">
+                </div>
+                <div class="header-top__burger">
+                    <span></span>
                 </div>
             </div>
-            <div class="header-content__right df">
-                <h1 class="neon-text">WEB <br> development &lt/&gt</h1>
-                <h1 class="neon-text">design</h1>
-                <h1 class="neon-text">studio</h1>
+            <div class="header-content df">
+                <div class="header-content__left df">
+                    <h1 class="header-content__title">Dелаем сайты .</h1>
+                    <p class="header-content__slogan">Получи <span
+                            class="header-content__slogan_violet">бесплатный прототип </span> .</p>
+                    <div class="main-btn">
+                        <a class="main-btn__link" href="#">Получить</a>
+                    </div>
+                </div>
+                <div class="header-content__right df">
+                    <h1 class="neon-text">WEB <br> development &lt/&gt</h1>
+                    <h1 class="neon-text">design</h1>
+                    <h1 class="neon-text">studio</h1>
+                </div>
+            </div>
+            <!--        <div class="header__ellipse_bottom"><img src="img/header/ellipse.svg" alt="ellipse"></div>-->
+        </div>
+        <!--    <div class="header__ellipse_top"><img src="img/header/ellipse.svg" alt="ellipse"></div>-->
+        <div class="header-top__burger-menu">
+            <div class="header-top__menu">
+                <div class="container">
+                    <nav>
+                        <ul class="header-top__list">
+                            <li class="header-top__item">
+                                <a href="" class="header-top__link">Услуги</a>
+                            </li>
+                            <li class="header-top__item">
+                                <a href="" class="header-top__link">Алгоритм работы</a>
+                            </li>
+                            <li class="header-top__item">
+                                <a href="" class="header-top__link">Портфолио</a>
+                            </li>
+                            <li class="header-top__item">
+                                <a href="" class="header-top__link">Прайс</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <section class="services" id="services">
+        <div class="container">
+            <p class="title title__services">У нас вы можете заказать</p>
+            <div class="services-block slider df">
+                <div class="services__item ">
+                    <div class="services-container df">
+                        <p class="services__title">Разработка</p>
+                        <hr class="services__line">
+                        <p class="services__text">
+                            Равным образом, курс на социально-ориентированный национальный проект
+                            обеспечивает актуальность.
+                        </p>
+                        <hr class="services__line">
+                        <p class="services__list">Корпоративных сайтов</p>
+                        <p class="services__list">Интернет-магазинов</p>
+                        <p class="services__list">Сайтов визиток</p>
+                        <p class="services__list">Промо сайтов</p>
+                        <p class="services__list">Лендингов</p>
+
+                        <div class="main-btn services-btn">
+                            <a class="main-btn__link main-btn__link_services" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item ">
+                    <div class="services-container df">
+                        <p class="services__title">Дизайн</p>
+                        <hr class="services__line">
+                        <p class="services__text">
+                            Равным образом, курс на социально-ориентированный национальный проект обеспечивает
+                            актуальность.
+                        </p>
+                        <hr class="services__line">
+                        <p class="services__list">Фирменного стиля</p>
+                        <p class="services__list">Юзабилити аудит</p>
+                        <p class="services__list">Логотипов</p>
+                        <p class="services__list">Баннеров</p>
+                        <p class="services__list">Сайтов</p>
+
+                        <div class="main-btn services-btn">
+                            <a class="main-btn__link main-btn__link_services" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item ">
+                    <div class="services-container df">
+                        <p class="services__title">Поддержка</p>
+                        <hr class="services__line">
+                        <p class="services__text">
+                            Равным образом, курс на социально-ориентированный национальный проект обеспечивает
+                            актуальность.
+                        </p>
+                        <hr class="services__line">
+                        <p class="services__list">Графическое сопровождение</p>
+                        <p class="services__list">Техническая поддержка</p>
+                        <p class="services__list">Наполнение контентом</p>
+                        <p class="services__list">Консультация</p>
+                        <p class="services__list">Обучение</p>
+
+                        <div class="main-btn services-btn">
+                            <a class="main-btn__link main-btn__link_services" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="header__ellipse_top"><img src="img/header/ellipse.svg" alt="ellipse"></div>
-    <div class="header__ellipse_bottom"><img src="img/header/ellipse.svg" alt="ellipse"></div>
-    <div class="header-top__burger-menu">
-        <div class="header-top__menu">
-            <div class="container">
-                <nav>
-                    <ul class="header-top__list">
-                        <li class="header-top__item">
-                            <a href="" class="header-top__link">Услуги</a>
+        <!--    <div class="header__ellipse_bottom"><img src="img/header/ellipse.svg" alt="ellipse"></div>-->
+
+    </section>
+    <section class="call-back">
+        <div class="container">
+            <p class="title title__call-back">Хочешь обсудить проект?</p>
+            <form class="call-back__form df" action="">
+                <div class="form-block">
+                    <input type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="form-block">
+                    <input type="text" placeholder="Введите ваш телефон">
+                </div>
+                <div class="form-block">
+                    <input class="main-btn__link btn-form" type="submit" value="Обсудить со мной">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="project">
+        <div class="container">
+            <p class="title">Наши проекты</p>
+            <div class="slider project__block slider-project df">
+                <a class="project__item anim-items anim-project" href="">
+                    <img src="img/project/kitchen.png" alt="kitchen">
+                </a>
+                <a class="project__item anim-items anim-project" href="">
+                    <img src="img/project/herbalive.png" alt="herbalive">
+                </a>
+                <a class="project__item anim-items anim-project" href="">
+                    <img src="img/project/rr.png" alt="rr">
+                </a>
+                <a class="project__item anim-items anim-project" href="">
+                    <img src="img/project/lodki24.png" alt="lodki24">
+                </a>
+                <a class="project__item anim-items anim-project" href="">
+                    <img src="img/project/avtomuving.png" alt="avtomuving">
+                </a>
+                <a class="project__item anim-items anim-project" href="">
+                    <img src="img/project/tomboat.png" alt="tomboat">
+                </a>
+                <a class="project__item anim-items anim-project" href="">
+                    <img src="img/project/chairman.png" alt="chairman">
+                </a>
+                <a class="project__item anim-items anim-project" href="">
+                    <img src="img/project/onRoad.png" alt="onRoad">
+                </a>
+            </div>
+            <div class="main-btn project-btn">
+                <a class="main-btn__link" href="#">Запросить полное портфолио</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="algorithm" id="algorithm">
+        <div class="container">
+            <p class="title">Какой порядок действий?</p>
+            <div class="algorithm__lil-block df">
+                <div data-tab="tab-1" class="lil-block__item tab-active">
+                    <p class="lil-tab__title">01</p>
+                    <p class="lil-tab__text">Анализ</p>
+                </div>
+                <div data-tab="tab-2" class="lil-block__item">
+                    <p class="lil-tab__title">02</p>
+                    <p class="lil-tab__text">Прототип</p>
+                </div>
+                <div data-tab="tab-3" class="lil-block__item">
+                    <p class="lil-tab__title">03</p>
+                    <p class="lil-tab__text">SEO</p>
+                </div>
+                <div data-tab="tab-4" class="lil-block__item">
+                    <p class="lil-tab__title">04</p>
+                    <p class="lil-tab__text">Дизайн</p>
+                </div>
+                <div data-tab="tab-5" class="lil-block__item">
+                    <p class="lil-tab__title">05</p>
+                    <p class="lil-tab__text">Вёрстка</p>
+                </div>
+                <div data-tab="tab-6" class="lil-block__item">
+                    <p class="lil-tab__title">06</p>
+                    <p class="lil-tab__text">Контент</p>
+                </div>
+                <div data-tab="tab-7" class="lil-block__item">
+                    <p class="lil-tab__title">07</p>
+                    <p class="lil-tab__text">Запуск</p>
+                </div>
+            </div>
+
+            <div class="algorithm__big-block df">
+                <div id="1" class="big-block__item tab-active tab-1 ">
+                    <div class="big-tab__title">
+                        <p class="big-tab__title-number">01</p>
+                        <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
+                    </div>
+                    <p class="big-tab__text">
+                        Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
+                        себя ваши конкуренты, находим их сильные и слабые стороны
+                    </p>
+                    <ul class="tab-list">
+                        <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
+                        <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
+                        <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
+                        <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
+                        <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
+                    </ul>
+                    <div class="big-block__img">
+                        <img src="img/algorithm/01.svg" alt="">
+                    </div>
+                </div>
+                <div id="2" class="big-block__item tab-2">
+                    <div class="big-tab__title">
+                        <p class="big-tab__title-number">02</p>
+                        <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
+                    </div>
+                    <p class="big-tab__text">
+                        Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
+                        себя ваши конкуренты, находим их сильные и слабые стороны
+                    </p>
+                    <ul class="tab-list">
+                        <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
+                        <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
+                        <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
+                        <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
+                        <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
+                    </ul>
+                    <div class="big-block__img">
+                        <img src="img/algorithm/02.svg" alt="">
+                    </div>
+                </div>
+                <div id="3" class="big-block__item tab-3">
+                    <div class="big-tab__title">
+                        <p class="big-tab__title-number">03</p>
+                        <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
+                    </div>
+                    <p class="big-tab__text">
+                        Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
+                        себя ваши конкуренты, находим их сильные и слабые стороны
+                    </p>
+                    <ul class="tab-list">
+                        <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
+                        <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
+                        <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
+                        <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
+                        <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
+                    </ul>
+                    <div class="big-block__img">
+                        <img src="img/algorithm/03.svg" alt="">
+                    </div>
+                </div>
+                <div id="4" class="big-block__item tab-4">
+                    <div class="big-tab__title">
+                        <p class="big-tab__title-number">04</p>
+                        <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
+                    </div>
+                    <p class="big-tab__text">
+                        Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
+                        себя ваши конкуренты, находим их сильные и слабые стороны
+                    </p>
+                    <ul class="tab-list">
+                        <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
+                        <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
+                        <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
+                        <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
+                        <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
+                    </ul>
+                    <div class="big-block__img">
+                        <img src="img/algorithm/04.svg" alt="">
+                    </div>
+                </div>
+                <div id="5" class="big-block__item tab-5">
+                    <div class="big-tab__title">
+                        <p class="big-tab__title-number">05</p>
+                        <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
+                    </div>
+                    <p class="big-tab__text">
+                        Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
+                        себя ваши конкуренты, находим их сильные и слабые стороны
+                    </p>
+                    <ul class="tab-list">
+                        <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
+                        <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
+                        <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
+                        <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
+                        <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
+                    </ul>
+                    <div class="big-block__img">
+                        <img src="img/algorithm/05.svg" alt="">
+                    </div>
+                </div>
+                <div id="6" class="big-block__item tab-6">
+                    <div class="big-tab__title">
+                        <p class="big-tab__title-number">06</p>
+                        <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
+                    </div>
+                    <p class="big-tab__text">
+                        Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
+                        себя ваши конкуренты, находим их сильные и слабые стороны
+                    </p>
+                    <ul class="tab-list">
+                        <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
+                        <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
+                        <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
+                        <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
+                        <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
+                    </ul>
+                    <div class="big-block__img">
+                        <img src="img/algorithm/06.svg" alt="">
+                    </div>
+                </div>
+                <div id="7" class="big-block__item tab-7">
+                    <div class="big-tab__title">
+                        <p class="big-tab__title-number">07</p>
+                        <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
+                    </div>
+                    <p class="big-tab__text">
+                        Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
+                        себя ваши конкуренты, находим их сильные и слабые стороны
+                    </p>
+                    <ul class="tab-list">
+                        <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
+                        <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
+                        <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
+                        <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
+                        <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
+                    </ul>
+                    <div class="big-block__img">
+                        <img src="img/algorithm/07.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price">
+        <div class="container">
+            <p class="title">Стоимость наших услуг</p>
+            <div class="price-block df">
+                <p class="price-title">
+                    Стоимость вашего проекта обсуждается в индивидуальном порядке. <br>
+                    <span class="price-title__green">Ориентировочная стоимость проекта:</span>
+                </p>
+                <div class="price-list">
+                    <div class="price-list__item">
+                        <p class="price-services"><span class="price-circle"></span>Корпоративный сайт</p>
+                        <hr class="price-line">
+                        <p class="min-price">от 12 000 грн</p>
+                    </div>
+                    <div class="price-list__item">
+                        <p class="price-services"><span class="price-circle"></span>Интернет-магазин</p>
+                        <hr class="price-line">
+                        <p class="min-price">от 20 000 грн</p>
+                    </div>
+                    <div class="price-list__item">
+                        <p class="price-services"><span class="price-circle"></span>Сайт-визитка</p>
+                        <hr class="price-line">
+                        <p class="min-price">от 6 000 грн</p>
+                    </div>
+                    <div class="price-list__item">
+                        <p class="price-services"><span class="price-circle"></span>Промо-сайт</p>
+                        <hr class="price-line">
+                        <p class="min-price">от 10 000 грн</p>
+                    </div>
+                    <div class="price-list__item">
+                        <p class="price-services"><span class="price-circle"></span>Лендинг</p>
+                        <hr class="price-line">
+                        <p class="min-price">от 7 000 грн</p>
+                    </div>
+                </div>
+
+                <div class="price-buy df">
+                    <img class="price-buy__img" src="img/price/bg.svg" alt="price">
+                    <div class="main-btn btn-buy">
+                        <a class="main-btn__link main-btn__link_buy" href="#">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <p class="title title__footer">Остались вопросы?</p>
+            <form class="call-back__form df" action="">
+                <div class="form-block">
+                    <input type="text" placeholder="Введите ваше имя">
+                </div>
+                <div class="form-block">
+                    <input type="text" placeholder="Введите ваш телефон">
+                </div>
+                <div class="form-block">
+                    <input class="main-btn__link btn-form" type="submit" value="Обсудить со мной">
+                </div>
+            </form>
+
+            <div class="bottom-footer df">
+                <div class="logo">
+                    <img src="img/header/logo.png" alt="Y&H logo">
+                </div>
+                <div class="footer-menu">
+                    <ul class="footer-menu__list df">
+                        <li class="footer-menu__item df">
+                            <a href="#" class="footer-menu__link">Услуги</a>
                         </li>
-                        <li class="header-top__item">
-                            <a href="" class="header-top__link">Алгоритм работы</a>
+                        <li class="footer-menu__item df">
+                            <a href="#" class="footer-menu__link">Портфолио</a>
                         </li>
-                        <li class="header-top__item">
-                            <a href="" class="header-top__link">Портфолио</a>
+                        <li class="footer-menu__item df">
+                            <a href="#" class="footer-menu__link">Алгоритм работы</a>
                         </li>
-                        <li class="header-top__item">
-                            <a href="" class="header-top__link">Прайс</a>
+                        <li class="footer-menu__item df">
+                            <a href="#" class="footer-menu__link">Прайс</a>
                         </li>
                     </ul>
-                </nav>
+                </div>
+                <div class="footer-social df">
+                    <a href="#">
+                        <span class="footer-social__link">Facebook</span>
+                        <img class="footer__img" src="img/footer/facebook.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <span class="footer-social__link">Instagram</span>
+                        <img class="footer__img" src="img/footer/instagram.svg" alt="">
+                    </a>
+                </div>
             </div>
+
+            <p class="footer-span">© 2020. Все права защищены</p>
         </div>
+    </footer>
 
-    </div>
-
-</header>
-
-<section class="services" id="services">
-    <div class="container">
-        <p class="title">У нас вы можете заказать</p>
-        <div class="services-block df">
-            <div class="services__item ">
-                <div class="services-container df">
-                    <p class="services__title">Разработка</p>
-                    <hr class="services__line">
-                    <p class="services__text">
-                        Равным образом, курс на социально-ориентированный национальный проект
-                        обеспечивает актуальность.
-                    </p>
-                    <hr class="services__line">
-                    <p class="services__list">Корпоративных сайтов</p>
-                    <p class="services__list">Интернет-магазинов</p>
-                    <p class="services__list">Сайтов визиток</p>
-                    <p class="services__list">Промо сайтов</p>
-                    <p class="services__list">Лендингов</p>
-
-                    <div class="main-btn services-btn">
-                        <a class="main-btn__link" href="#">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="services__item ">
-                <div class="services-container df">
-                    <p class="services__title">Дизайн</p>
-                    <hr class="services__line">
-                    <p class="services__text">
-                        Равным образом, курс на социально-ориентированный национальный проект обеспечивает актуальность.
-                    </p>
-                    <hr class="services__line">
-                    <p class="services__list">Фирменного стиля</p>
-                    <p class="services__list">Юзабилити аудит</p>
-                    <p class="services__list">Логотипов</p>
-                    <p class="services__list">Баннеров</p>
-                    <p class="services__list">Сайтов</p>
-
-                    <div class="main-btn services-btn">
-                        <a class="main-btn__link" href="#">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="services__item ">
-                <div class="services-container df">
-                    <p class="services__title">Поддержка</p>
-                    <hr class="services__line">
-                    <p class="services__text">
-                        Равным образом, курс на социально-ориентированный национальный проект обеспечивает актуальность.
-                    </p>
-                    <hr class="services__line">
-                    <p class="services__list">Графическое сопровождение</p>
-                    <p class="services__list">Техническая поддержка</p>
-                    <p class="services__list">Наполнение контентом</p>
-                    <p class="services__list">Консультация</p>
-                    <p class="services__list">Обучение</p>
-
-                    <div class="main-btn services-btn">
-                        <a class="main-btn__link" href="#">Подробнее</a>
-                    </div>
-                </div>
+    <div class="popUp">
+        <div class="popUp__content">
+            <div class="popUp__container">
+                <p class="popUp__title">
+                    Заполните форму и в скором времени мы с Вами свяжемся
+                </p>
+                <form action="" class="popUp__form df">
+                    <input class="popUp__input" type="text" name="user_name" placeholder="Введите ваше имя">
+                    <input class="popUp__input" type="text" name="user_phone" placeholder="Введите ваш телефон">
+                    <textarea class="popUp__input popUp__comment" name="user_text"
+                              placeholder="Ваш комментарий по заказу" rows="5"></textarea>
+                    <input class="popUp__btn" type="submit" value="Отправить форму">
+                </form>
+                <span class="popUp__close">&#10006</span>
             </div>
         </div>
     </div>
-</section>
-
-<section class="call-back">
-    <div class="container">
-        <p class="title title__call-back">У нас вы можете заказать</p>
-        <form class="call-back__form df" action="">
-            <div class="form-block">
-                <input type="text" placeholder="Введите ваше имя">
-            </div>
-            <div class="form-block">
-                <input type="text" placeholder="Введите ваш телефон">
-            </div>
-            <div class="form-block">
-                <input class="main-btn__link btn-form" type="submit" value="Обсудить со мной">
-            </div>
-        </form>
-    </div>
-</section>
-
-<section class="project">
-    <div class="container">
-        <p class="title">Наши проекты</p>
-        <div class="project__block df">
-            <a class="project__item" href="">
-                <img src="img/project/kitchen.png" alt="kitchen">
-            </a>
-            <a class="project__item" href="">
-                <img src="img/project/herbalive.png" alt="herbalive">
-            </a>
-            <a class="project__item" href="">
-                <img src="img/project/rr.png" alt="rr">
-            </a>
-            <a class="project__item" href="">
-                <img src="img/project/lodki24.png" alt="lodki24">
-            </a>
-            <a class="project__item" href="">
-                <img src="img/project/avtomuving.png" alt="avtomuving">
-            </a>
-            <a class="project__item" href="">
-                <img src="img/project/tomboat.png" alt="tomboat">
-            </a>
-            <a class="project__item" href="">
-                <img src="img/project/chairman.png" alt="chairman">
-            </a>
-            <a class="project__item" href="">
-                <img src="img/project/onRoad.png" alt="onRoad">
-            </a>
-        </div>
-        <div class="main-btn project-btn">
-            <a class="main-btn__link" href="#">Запросить полное портфолио</a>
-        </div>
-    </div>
-</section>
-
-<section class="algorithm" id="algorithm">
-    <div class="container">
-        <p class="title">Какой порядок действий?</p>
-        <div class="algorithm__lil-block df">
-            <div data-tab="tab-1" class="lil-block__item tab-active">
-                <p class="lil-tab__title">01</p>
-                <p class="lil-tab__text">Анализ</p>
-            </div>
-            <div data-tab="tab-2" class="lil-block__item">
-                <p class="lil-tab__title">02</p>
-                <p class="lil-tab__text">Прототип</p>
-            </div>
-            <div data-tab="tab-3" class="lil-block__item">
-                <p class="lil-tab__title">03</p>
-                <p class="lil-tab__text">SEO</p>
-            </div>
-            <div data-tab="tab-4" class="lil-block__item">
-                <p class="lil-tab__title">04</p>
-                <p class="lil-tab__text">Дизайн</p>
-            </div>
-            <div data-tab="tab-5" class="lil-block__item">
-                <p class="lil-tab__title">05</p>
-                <p class="lil-tab__text">Вёрстка</p>
-            </div>
-            <div data-tab="tab-6" class="lil-block__item">
-                <p class="lil-tab__title">06</p>
-                <p class="lil-tab__text">Контент</p>
-            </div>
-            <div data-tab="tab-7" class="lil-block__item">
-                <p class="lil-tab__title">07</p>
-                <p class="lil-tab__text">Запуск</p>
-            </div>
-        </div>
-
-        <div class="algorithm__big-block df">
-            <div id="1" class="big-block__item tab-active tab-1 ">
-                <div class="big-tab__title">
-                    <p class="big-tab__title-number">01</p>
-                    <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
-                </div>
-                <p class="big-tab__text">
-                    Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
-                    себя ваши конкуренты, находим их сильные и слабые стороны
-                </p>
-                <ul class="tab-list">
-                    <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
-                    <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
-                    <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
-                    <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
-                    <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
-                </ul>
-            </div>
-            <div id="2" class="big-block__item tab-2">
-                <div class="big-tab__title">
-                    <p class="big-tab__title-number">02</p>
-                    <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
-                </div>
-                <p class="big-tab__text">
-                    Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
-                    себя ваши конкуренты, находим их сильные и слабые стороны
-                </p>
-                <ul class="tab-list">
-                    <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
-                    <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
-                    <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
-                    <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
-                    <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
-                </ul>
-            </div>
-            <div id="3" class="big-block__item tab-3">
-                <div class="big-tab__title">
-                    <p class="big-tab__title-number">03</p>
-                    <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
-                </div>
-                <p class="big-tab__text">
-                    Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
-                    себя ваши конкуренты, находим их сильные и слабые стороны
-                </p>
-                <ul class="tab-list">
-                    <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
-                    <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
-                    <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
-                    <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
-                    <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
-                </ul>
-            </div>
-            <div id="4" class="big-block__item tab-4">
-                <div class="big-tab__title">
-                    <p class="big-tab__title-number">04</p>
-                    <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
-                </div>
-                <p class="big-tab__text">
-                    Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
-                    себя ваши конкуренты, находим их сильные и слабые стороны
-                </p>
-                <ul class="tab-list">
-                    <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
-                    <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
-                    <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
-                    <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
-                    <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
-                </ul>
-            </div>
-            <div id="5" class="big-block__item tab-5">
-                <div class="big-tab__title">
-                    <p class="big-tab__title-number">05</p>
-                    <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
-                </div>
-                <p class="big-tab__text">
-                    Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
-                    себя ваши конкуренты, находим их сильные и слабые стороны
-                </p>
-                <ul class="tab-list">
-                    <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
-                    <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
-                    <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
-                    <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
-                    <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
-                </ul>
-            </div>
-            <div id="6" class="big-block__item tab-6">
-                <div class="big-tab__title">
-                    <p class="big-tab__title-number">06</p>
-                    <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
-                </div>
-                <p class="big-tab__text">
-                    Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
-                    себя ваши конкуренты, находим их сильные и слабые стороны
-                </p>
-                <ul class="tab-list">
-                    <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
-                    <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
-                    <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
-                    <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
-                    <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
-                </ul>
-            </div>
-            <div id="7" class="big-block__item tab-7">
-                <div class="big-tab__title">
-                    <p class="big-tab__title-number">07</p>
-                    <span class="big-tab__text-number">Сбор информации о <br> конкурентах</span>
-                </div>
-                <p class="big-tab__text">
-                    Первым делом мы начинаем с того что смотрим как <br> позиционирует <br>
-                    себя ваши конкуренты, находим их сильные и слабые стороны
-                </p>
-                <ul class="tab-list">
-                    <li class="tab-item"><span>01.1</span> Узнаем специфику вашего бизнеса</li>
-                    <li class="tab-item"><span>01.2</span> Проводим исследование рынка</li>
-                    <li class="tab-item"><span>01.3</span> Ставим конкретные цели</li>
-                    <li class="tab-item"><span>01.4</span> Смотрим на решения конкурентов</li>
-                    <li class="tab-item"><span>01.5</span> Формируем собственную стратегию</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="price">
-    <div class="container">
-        <p class="title">Какой порядок действий?</p>
-        <div class="price-block df">
-            <p class="price-title">
-                Стоимость вашего проекта обсуждается в индивидуальном порядке. <br>
-                <span class="price-title__green">Ориентировочная стоимость проекта:</span>
-            </p>
-            <div class="price-list">
-                <div class="price-list__item">
-                    <span class="price-circle"></span>
-                    <p class="price-services">Корпоративный сайт</p>
-                    <hr class="price-line">
-                    <p class="min-price">от 12 000 грн</p>
-                </div>
-                <div class="price-list__item">
-                    <span class="price-circle"></span>
-                    <p class="price-services">Интернет-магазин</p>
-                    <hr class="price-line">
-                    <p class="min-price">от 20 000 грн</p>
-                </div>
-                <div class="price-list__item">
-                    <span class="price-circle"></span>
-                    <p class="price-services">Сайт-визитка</p>
-                    <hr class="price-line">
-                    <p class="min-price">от 6 000 грн</p>
-                </div>
-                <div class="price-list__item">
-                    <span class="price-circle"></span>
-                    <p class="price-services">Промо-сайт</p>
-                    <hr class="price-line">
-                    <p class="min-price">от 10 000 грн</p>
-                </div>
-                <div class="price-list__item">
-                    <span class="price-circle"></span>
-                    <p class="price-services">Лендинг</p>
-                    <hr class="price-line">
-                    <p class="min-price">от 7 000 грн</p>
-                </div>
-            </div>
-
-            <div class="price-buy df">
-                <img class="price-buy__img" src="img/price/bg.svg" alt="price">
-                <div class="main-btn">
-                    <a class="main-btn__link" href="#">Заказать</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="footer" id="footer">
-    <div class="container">
-        <p class="title title__footer">Остались вопросы?</p>
-        <form class="call-back__form df" action="">
-            <div class="form-block">
-                <input type="text" placeholder="Введите ваше имя">
-            </div>
-            <div class="form-block">
-                <input type="text" placeholder="Введите ваш телефон">
-            </div>
-            <div class="form-block">
-                <input class="main-btn__link btn-form" type="submit" value="Обсудить со мной">
-            </div>
-        </form>
-
-        <div class="bottom-footer df">
-            <div class="logo">
-                <img src="img/header/logo.png" alt="Y&H logo">
-            </div>
-            <div class="footer-menu">
-                <ul class="footer-menu__list">
-                    <li class="footer-menu__item">
-                        <a href="#" class="footer-menu__link">Услуги</a>
-                    </li>
-                    <li class="footer-menu__item">
-                        <a href="#" class="footer-menu__link">Портфолио</a>
-                    </li>
-                    <li class="footer-menu__item">
-                        <a href="#" class="footer-menu__link">Алгоритм работы</a>
-                    </li>
-                    <li class="footer-menu__item">
-                        <a href="#" class="footer-menu__link">Прайс</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-            </div>
-        </div>
-
-        <p class="footer-span">© 2020. Все права защищены</p>
-    </div>
-
-</footer>
-
 <script src="js/main.js"></script>
 </body>
 </html>
