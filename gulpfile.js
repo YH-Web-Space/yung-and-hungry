@@ -18,6 +18,10 @@ gulp.task('html', function () {
         .pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('php', function () {
+    return gulp.src('app/*.php')
+        .pipe(browserSync.reload({stream: true}))
+});
 // gulp.task('js', function () {
 //     return gulp.src([
 //         'node_modules',
@@ -26,16 +30,15 @@ gulp.task('html', function () {
 
 gulp.task('browser-sync', function() {
     browserSync.init({
-        server: {
-            baseDir: "app/"
-        }
+        proxy: "webSpace.dev"
     });
 });
 
 gulp.task('watch', function () {
-    gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'))
-    gulp.watch('app/*.html', gulp.parallel('html'))
-
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
+    gulp.watch('app/*.html', gulp.parallel('html'));
+    gulp.watch('app/*.php', gulp.parallel('php'));
+    // gulp.watch('app/**/*.php').on('change', browserSync.reload);
 });
 
 gulp.task('default', gulp.parallel('browser-sync','watch'))

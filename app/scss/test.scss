@@ -1,0 +1,122 @@
+
+@import "../../node_modules/normalize.css/normalize";
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@font-face {
+  font-family: Neon, sans-serif;
+  src: url('../font/neon.eot');
+  src: url('../font/neon.eot?#iefix') format('embedded-opentype'),
+  url('../font/neon.woff') format('woff'),
+  url('../font/neon.ttf') format('truetype');
+}
+
+$rubik: 'Rubik', sans-serif;
+$karla: 'Karla', sans-serif;
+$neon: 'Neon', sans-serif;
+$violet: #5960A4;
+$black: #3A3A3A;
+$green: #3BC282;
+$blue: #034B5B;
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  outline: none;
+}
+h1{
+  font-family: $rubik;
+  font-style: normal;
+  color: #FFFFFF;
+  margin: 0;
+}
+p{
+  font-family: $rubik;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.df {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.content{
+  background: linear-gradient(107.53deg, #0B1416 0%, #005F74 100%);
+  height: 100vh;
+}
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+.quiz-title{
+  padding: 20px 0;
+  text-align: center;
+}
+.form_radio {
+  margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+  //display: none;
+  width: 20px;
+  height: 20px;
+}
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  user-select: none;
+  font-family: $rubik;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: white;
+}
+.quiz{
+  width: 100%;
+}
+.form-block{
+  position: relative;
+}
+.quiz-cart{
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(0,0,0,1);
+  padding: 20px;
+}
+.quiz-cart:nth-child(1){
+  z-index: 4;
+}
+.quiz-cart:nth-child(2){
+  z-index: 3;
+}
+.quiz-cart:nth-child(3){
+  z-index: 2;
+}
+.quiz-cart:nth-child(4){
+  z-index: 1;
+}
+.quiz-cart.active{
+  z-index: -1;
+}
+.send-result{
+  width: 100%;
+  height: 100%;
+  background: #3BC282;
+}
+.btn.active{
+  //pointer-events: none;
+  background: red;
+}

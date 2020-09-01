@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/test.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/maskinput.js"></script>
+
+</head>
+<body>
+<div class="content">
+    <div class="container">
+        <h1 class="quiz-title">Квизы</h1>
+        <div class="quiz">
+            <form action="quiz.php" method="post" class="form-block">
+                <div class="quiz-cart">
+                    <p class="quiz-question">Столиця Укрїни?</p>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-1" type="radio" name="radio1" value="Київ" >
+                        <label for="radio-1">Київ</label>
+                    </div>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-2" type="radio" name="radio1" value="Львів">
+                        <label for="radio-2">Львів</label>
+                    </div>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-3" type="radio" name="radio1" value="Харків">
+                        <label for="radio-3">Харків</label>
+                    </div>
+
+                    <input class="answer" name="answer1" type="text" value="" >
+                    <button class="btn" type="submit">Следующий вопрос</button>
+                </div>
+
+                <div class="quiz-cart">
+                    <p class="quiz-question">Президент України</p>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-4" type="radio" name="radio2" value="Петро Порошенко" >
+                        <label for="radio-4">Петро Порошенко</label>
+                    </div>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-5" type="radio" name="radio2" value="Володимир Зеленський">
+                        <label for="radio-5">Володимир Зеленський</label>
+                    </div>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-6" type="radio" name="radio2" value="Віктор Янукович">
+                        <label for="radio-6">Віктор Янукович</label>
+                    </div>
+                    <input class="answer" name="answer2" type="text" value="" >
+                    <button class="btn" type="submit">Следующий вопрос</button>
+                </div>
+
+                <div class="quiz-cart">
+                    <p class="quiz-question">RAP?</p>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-7" type="radio" name="radio3" value="Boulevard Depo" >
+                        <label for="radio-7">Boulevard Depo</label>
+                    </div>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-8" type="radio" name="radio3" value="Pharaoh">
+                        <label for="radio-8">Pharaoh</label>
+                    </div>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-9" type="radio" name="radio3" value="Скриптонит">
+                        <label for="radio-9">Скриптонит</label>
+                    </div>
+                    <input class="answer" name="answer3" type="text" value="" >
+                    <button class="btn" type="submit">Следующий вопрос</button>
+                </div>
+
+                <div class="quiz-cart">
+                    <p class="quiz-question">Чей Крым?</p>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-10" type="radio" name="radio4" value="Украина">
+                        <label for="radio-10">Украина</label>
+                    </div>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-11" type="radio" name="radio4" value="Россия">
+                        <label for="radio-11">Россия</label>
+                    </div>
+                    <div class="form_radio">
+                        <input class="checkbox" id="radio-12" type="radio" name="radio4" value="Монголия">
+                        <label for="radio-12">Монголия</label>
+                    </div>
+                    <input class="answer" name="answer4" type="text" value="" >
+                    <button class="btn" type="submit">Следующий вопрос</button>
+                </div>
+
+                <div class="send-result">
+                    <h1>Куда отправить результаты?</h1>
+
+                    <input class="popUp__input" type="text" name="user_name" placeholder="Введите ваше имя" required>
+                    <input class="form-phone popUp__input" type="text" name="user_phone" placeholder="Введите ваш телефон" required>
+
+                    <button type="submit">ОТПРАВИТЬ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/quize.js"></script>
+
+</body>
+</html>

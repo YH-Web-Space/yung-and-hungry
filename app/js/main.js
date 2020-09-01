@@ -97,7 +97,7 @@ if (animItems.length > 0) {
     setTimeout(animOnScroll, 300);
 }
 
-let btnPopUp = document.querySelectorAll('.main-btn'),
+let btnPopUp = document.querySelectorAll('.btnPopUp'),
     popUp = document.querySelector('.popUp'),
     closePopUp = document.querySelector('.popUp__close'),
     formPopUp = document.querySelector('.popUp__container'),

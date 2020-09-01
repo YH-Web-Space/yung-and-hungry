@@ -1,3 +1,6 @@
+<?php
+echo ('jopajopajopa');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,8 +33,8 @@
                         <h1 class="header-content__title">Dелаем сайты .</h1>
                         <p class="header-content__slogan">Получи <span
                                 class="header-content__slogan_violet">бесплатный прототип </span> .</p>
-                        <div class="main-btn" data-ser="CTA">
-                            <a class="main-btn__link btn-header" href="#">Получить</a>
+                        <div class="main-btn">
+                            <a class="main-btn__link btn-header" href="test.html">Получить</a>
                         </div>
                     </div>
                     <div class="header-content__right df">
@@ -93,7 +96,7 @@
                             <p class="services__list">Промо сайтов</p>
                             <p class="services__list">Лендингов</p>
 
-                            <div class="main-btn services-btn" data-ser="Разработка">
+                            <div class="main-btn services-btn btnPopUp" data-ser="Разработка">
                                 <a class="main-btn__link main-btn__link_services" href="#">Подробнее</a>
                             </div>
                         </div>
@@ -113,7 +116,7 @@
                             <p class="services__list">Баннеров</p>
                             <p class="services__list">Сайтов</p>
 
-                            <div class="main-btn services-btn" data-ser="Дизайн">
+                            <div class="main-btn services-btn btnPopUp" data-ser="Дизайн">
                                 <a class="main-btn__link main-btn__link_services" href="#">Подробнее</a>
                             </div>
                         </div>
@@ -133,7 +136,7 @@
                             <p class="services__list">Консультация</p>
                             <p class="services__list">Обучение</p>
 
-                            <div class="main-btn services-btn" data-ser="Поддержка">
+                            <div class="main-btn services-btn btnPopUp" data-ser="Поддержка">
                                 <a class="main-btn__link main-btn__link_services" href="#">Подробнее</a>
                             </div>
                         </div>
@@ -188,7 +191,7 @@
                         <img src="img/project/onRoad.png" alt="onRoad">
                     </a>
                 </div>
-                <div class="main-btn project-btn" data-ser="Запросить портфолио">
+                <div class="main-btn project-btn btnPopUp" data-ser="Запросить портфолио">
                     <a class="main-btn__link" href="#">Запросить полное портфолио</a>
                 </div>
             </div>
@@ -411,7 +414,7 @@
 
                     <div class="price-buy df">
                         <img class="price-buy__img" src="img/price/bg.svg" alt="price">
-                        <div class="main-btn btn-buy">
+                        <div class="main-btn btn-buy btnPopUp">
                             <a class="main-btn__link main-btn__link_buy" href="#">Заказать</a>
                         </div>
                     </div>
